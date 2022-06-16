@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: service2
+
+server:
+  port: 8081
+
+
+#eureka:
+# client:
+#    registerWithEureka: true
+#   fetchRegistry: true
+#   serviceUrl:
+#     defaultZone: http://127.0.0.1:8761/eureka
+#  instance:
+#    hostname: localhost
+    
+ 
+logging:
+  level:
+    com : DEBUG
+#    ROOT: TRACE
+    org:
+      springframework:
+       cloud.commons.util.InetUtils : TRACE
+       web : TRACE
+#    com.netflix:
+#      eureka : TRACE
+#     discovery : TRACE
+
+app:
+  name: spring boot application
+  api:
+    title: Spring Boot APIs
+    version: 1.0.0
+    description: Spring Boot APIs description
+    swagger:
+      enable: true
